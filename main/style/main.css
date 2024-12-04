@@ -1,0 +1,357 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding-bottom: 5px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+
+.logo > a > img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.search > form {
+    width: auto;
+    float: right;
+    margin-right: 30px;
+}
+
+.search > form > input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #ffffff;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+
+.search > form > input:focus {
+    width: 300px;
+}
+
+.search > form > button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    top: -2px;
+}
+
+.search > form > button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #324b4e;
+}
+
+.logo, .dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.like, .korzina, .sighn {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+button i {
+    font-size: 18px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card-container, .card-container-2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.card-container::-webkit-scrollbar, 
+.card-container-2::-webkit-scrollbar {
+    display: none;
+}
+
+.card-container::-webkit-scrollbar-thumb, 
+.card-container-2::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-track, 
+.card-container-2::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+}
+
+.scroll-container, .scroll-container-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #007BFF;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s, transform 0.3s, border-radius 0.3s;
+}
+
+.scroll-btn:hover {
+    color:  black;
+    transform: translateY(-50%) scale(1.2);
+}
+
+#scroll-left {
+    left: -15px;
+}
+
+#scroll-right {
+    right: -15px;
+}
+
+#scroll-left-2 {
+    left: -15px;
+}
+
+#scroll-right-2 {
+    right: -15px; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart {
+    margin: 20px;
+}
+
+#cart-items .card {
+    margin-bottom: 15px;
+}
+
+#checkout-button {
+    font-size: 1.2rem;
+}
+
+.card-title {
+    margin-bottom: auto;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.card-container > .card > img {
+    height: 130px;
+    width: 200px;
+}
+
+.card-container-2 > .card > img {
+    height: 240px;
+    width: 170px;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(51, 51, 51), rgb(33, 33, 33));
+    padding: 40px 20px;
+}
+
+.footer .nav-menu, .footer .nav-menu-2 {
+    flex: 1 1 30%;
+    margin: 0 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer .nav-menu h6, .footer .nav-menu-2 h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 5px;
+    color: rgb(51, 51, 51);
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007BFF;
+}
+
+.footer .social-icons {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #007BFF;
+}
+
+.copyright {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .nav-menu, .footer .nav-menu-2 {
+        margin: 20px 0;
+    }
+
+    .footer .social-icons {
+        justify-content: center;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+
+    .search input {
+        width: 80%;
+    }
+
+    .card-container::-webkit-scrollbar, 
+    .card-container-2::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scroll-container, .scroll-container-2 {
+        overflow-x: hidden;
+    }
+}
