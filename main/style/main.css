@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding-top: 80px;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .logo > a > img {
@@ -243,12 +244,12 @@ button i {
     margin-left: 76px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 15px;
+    padding: 17px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: 0.5s;
     margin-right: 76px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .product-card-electronics:hover {
@@ -279,6 +280,7 @@ button i {
 .product-details-electronics li {
     margin-bottom: 10px;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 .product-details-electronics a {

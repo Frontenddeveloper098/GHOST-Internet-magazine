@@ -1,21 +1,23 @@
-document.getElementById('scroll-left').addEventListener('click', () => {
-    const container = document.querySelector('.card-container');
-    container.scrollBy({ left: -224, behavior: 'smooth' });
-});
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('scroll-left').addEventListener('click', () => {
+        const container = document.querySelector('.card-container');
+        container.scrollBy({ left: -234, behavior: 'smooth' });
+    });
 
-document.getElementById('scroll-right').addEventListener('click', () => {
-    const container = document.querySelector('.card-container');
-    container.scrollBy({ left: 224, behavior: 'smooth' });
-});
+    document.getElementById('scroll-right').addEventListener('click', () => {
+        const container = document.querySelector('.card-container');
+        container.scrollBy({ left: 234, behavior: 'smooth' });
+    });
 
-document.getElementById('scroll-left-2').addEventListener('click', () => {
-    const container = document.querySelector('.card-container-2');
-    container.scrollBy({ left: -224, behavior: 'smooth' });
-});
+    document.getElementById('scroll-left-2').addEventListener('click', () => {
+        const container = document.querySelector('.card-container-2');
+        container.scrollBy({ left: -234, behavior: 'smooth' });
+    });
 
-document.getElementById('scroll-right-2').addEventListener('click', () => {
-    const container = document.querySelector('.card-container-2');
-    container.scrollBy({ left: 224, behavior: 'smooth' });
+    document.getElementById('scroll-right-2').addEventListener('click', () => {
+        const container = document.querySelector('.card-container-2');
+        container.scrollBy({ left: 234, behavior: 'smooth' });
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
