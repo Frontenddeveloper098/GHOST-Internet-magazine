@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main/style/main.css">
+    <link rel="stylesheet" href="/main/style/fontawesome-free-6.7.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="header">
+            <div class="logo">
+                <a href="/main/mainlist.html">
+                <img src="/main/image/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> Каталог</button>
+                <div class="dropdown-content">
+                    <a href="/main/catolog/electronics.html">Электроника</a>
+                    <a href="/main/catolog/pereferia.html">Переферия</a>
+                    <a href="/main/catolog/multimedia.html">Развлечения и Медиа</a>
+                </div>
+            </div>
+            <div class="search">
+                <form action="" method="get">
+                    <input name="s" placeholder="Искать здесь..." type="search">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div class="korzina">
+                <form action="/main/korzina.html">
+                    <button>
+                        <i class="fa-solid fa-cart-shopping">(<span id="cart-counter">0</span>)</i>
+                    </button>
+                </form>
+            </div>
+            <div class="sighn">
+                <form action="/login page/Login.html">
+                    <button>Войти</button>
+                </form>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <div class="sort-container">
+        <label for="sort-order">Сортировать:</label>
+        <select id="sort-order">
+            <option value="ascending">По возрастанию</option>
+            <option value="descending">По убыванию</option>
+        </select>
+    </div>
+    <div class="card-electronics">
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/iphone15.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Apple Iphone 15</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.1.</li>
+                    <li>Оперативная память (Гб): 6</li>
+                    <li>Операционная система: IOS 17</li>
+                    <li>Фотокамера (МПикс): 48 + 12 (двойная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">67 490,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/iphone12.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Apple Iphone 12</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.1.</li>
+                    <li>Оперативная память (Гб): 6</li>
+                    <li>Операционная система: IOS 17</li>
+                    <li>Фотокамера (МПикс): 48 + 12 (двойная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: Синий</li>
+                </ul>
+            </div>
+            <p class="cena">58 590,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/huaweipura70.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Huawei Pura 70</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.6</li>
+                    <li>Оперативная память (Гб): 12</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 50+13+12 (тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Белый</li>
+                </ul>
+            </div>
+            <p class="cena">59 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/samsungA55.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Samsung Galaxy A55</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.6</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 32</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Синий</li>
+                </ul>
+            </div>
+            <p class="cena">38 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/xiaomim6.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Xiaomi Poco M6</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.79</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 108+2 (двойная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">14 490,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/infinixhot50.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон INFINIX Hot 50</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.78</li>
+                    <li>Оперативная память (Гб): 6</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 50</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">16 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/xiaominote13.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Xiaomi Note 13</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.67</li>
+                    <li>Оперативная память (Гб): 6</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 108+8+2 (тройная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">18 490,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/realmec61.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон REALME C61</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.74</li>
+                    <li>Оперативная память (Гб): 6</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 50+0,08 (двойная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: Зелёный</li>
+                </ul>
+            </div>
+            <p class="cena">10 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/xiaomi14c.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Xiaomi Redmi 14C</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.88</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: IOS 17</li>
+                    <li>Фотокамера (МПикс): 50+2+0,08 (тройная)</li>
+                    <li>Встроенная память: 258Gb</li>
+                    <li>Цвет: Cиний</li>
+                </ul>
+            </div>
+            <p class="cena">13 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/SamsungGalaxyS21FE.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Samsung Galaxy S21 FE</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.4</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 12+12+8 (тройная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: графит</li>
+                </ul>
+            </div>
+            <p class="cena">42 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/Honor90.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Honor 90</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.7</li>
+                    <li>Оперативная память (Гб): 12</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 200+12+2 (тройная)</li>
+                    <li>Встроенная память: 512Gb</li>
+                    <li>Цвет: Изумрудный зеленый</li>
+                </ul>
+            </div>
+            <p class="cena">36 160,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/TECNOSpark 20Pro.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон TECNO Spark 20 Pro</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.78</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 14</li>
+                    <li>Фотокамера (МПикс): 108+2+0,08 (тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">16 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/TECNOPova6Pro.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон TECNO Pova 6 Pro 5G</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.78</li>
+                    <li>Оперативная память (Гб): 12</li>
+                    <li>Операционная система: Android</li>
+                    <li>Фотокамера (МПикс): 108+2+0,08(тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Зеленый</li>
+                </ul>
+            </div>
+            <p class="cena">23 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/SamsungGalaxyA35.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Samsung Galaxy A35</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.6</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 14</li>
+                    <li>Фотокамера (МПикс): 50+8+5 (тройная)</li>
+                    <li>Встроенная память: 128Gb</li>
+                    <li>Цвет: Лаванда</li>
+                </ul>
+            </div>
+            <p class="cena">27 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/INFINIXNote40Pro.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон INFINIX Note 40 Pro</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.78</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: Android 14</li>
+                    <li>Фотокамера (МПикс): 108+2+2 (тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Зеленый</li>
+                </ul>
+            </div>
+            <p class="cena">25 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/XiaomiRedmiNote13Pro.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Xiaomi Redmi Note 13 Pro</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.67</li>
+                    <li>Оперативная память (Гб): 12</li>
+                    <li>Операционная система: Android 15</li>
+                    <li>Фотокамера (МПикс): 200+8+2 (тройная)</li>
+                    <li>Встроенная память: 512Gb</li>
+                    <li>Цвет: Белый</li>
+                </ul>
+            </div>
+            <p class="cena">48 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/XiaomiPocoF6Pro.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Xiaomi Poco F6 Pro</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.67</li>
+                    <li>Оперативная память (Гб): 12</li>
+                    <li>Операционная система: Android 14</li>
+                    <li>Фотокамера (МПикс): 50+8+2 (тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">49 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+        <div class="product-card-electronics">
+            <div class="product-image-electronics">
+                <img src="/main/image/HonorX8b.webp" alt="Product Image">
+            </div>
+            <div class="product-details-electronics">
+                <a href=""><h2>Смартфон Honor X8b</h2></a>
+                <ul>
+                    <li>Диагональ экрана (дюйм): 6.7</li>
+                    <li>Оперативная память (Гб): 8</li>
+                    <li>Операционная система: IOS 17</li>
+                    <li>Фотокамера (МПикс): 108+5+2 (тройная)</li>
+                    <li>Встроенная память: 256Gb</li>
+                    <li>Цвет: Чёрный</li>
+                </ul>
+            </div>
+            <p class="cena">22 990,00 ₽</p> 
+            <a href="" class="btn btn-secondary">В корзину</a>
+            <a href="/main/singlepage/iphone15.html" class="btn btn-secondary">Подробнее</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="nav-menu">
+                <h6>Компания</h6>
+                <ul>
+                    <li><a href="">О Компании</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Вакансии</a></li>
+                    <li><a href="">Политика конфиденциальности</a></li>
+                    <li><a href="">Персональные данные</a></li>
+                    <li><a href="">Правила продаж</a></li>
+                    <li><a href="">Правила пользования сайта</a></li>
+                    <li><a href="">Сервисные центры</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-2">
+                <h6>Покупателям</h6>
+                <ul>
+                    <li><a href="">Как оформить заказ</a></li>
+                    <li><a href="">Способы оплаты</a></li>
+                    <li><a href="">Кредиты</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Статус заказа</a></li>
+                    <li><a href="">Обмен, возврат, гарантия</a></li>
+                    <li><a href="">Проверка статуса ремонта</a></li>
+                    <li><a href="">Юридическим лицам</a></li>
+                    <li><a href="">Проверка счета</a></li>
+                    <li><a href="">Корпоративные отделы</a></li>
+                    <li><a href="">Подарочные карты</a></li>
+                    <li><a href="">Бонусная программа</a></li>
+                    <li><a href="">Помощь</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2002–2024 Компания GHOST. Администрация Сайта не несет ответственности за размещаемые Пользователями материалы (в т.ч. информацию и изображения), их содержание и качество.
+            </div>
+        </div>
+    </footer>
+    <script src="/main/script.js"></script>
+</body>
+</html>

@@ -75,3 +75,18 @@ document.addEventListener('DOMContentLoaded', () => {
         cartCounter.textContent = updatedCount;
     });
 });
+
+document.getElementById('sort-order').addEventListener('change', function () {
+    const sortOrder = this.value;
+    const productCards = Array.from(document.querySelectorAll('.product-card-electronics'));
+    const container = document.querySelector('.card-electronics');
+
+    productCards.sort((a, b) => {
+        const priceA = parseFloat(a.querySelector('.cena').textContent.replace(/[^\d.-]/g, ''));
+        const priceB = parseFloat(b.querySelector('.cena').textContent.replace(/[^\d.-]/g, ''));
+
+        return sortOrder === 'ascending' ? priceA - priceB : priceB - priceA;
+    });
+
+    productCards.forEach(card => container.appendChild(card));
+});

@@ -28,12 +28,14 @@ body {
     width: auto;
     float: right;
     margin-right: 30px;
+    position: relative;
 }
 
 .search > form > input {
     width: 250px;
     height: 42px;
     padding-left: 15px;
+    padding-right: 50px;
     border-radius: 42px;
     border: 2px solid #324b4e;
     background: #ffffff;
@@ -51,19 +53,18 @@ body {
     height: 42px;
     background: none;
     border: none;
-    top: -2px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .search > form > button:before {
     content: "\f002";
     font-family: FontAwesome;
     color: #324b4e;
-}
-
-.logo, .dropdown {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+    font-size: 18px;
 }
 
 .search {
@@ -79,10 +80,20 @@ body {
     border-radius: 5px;
 }
 
+.logo, .dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
 .like, .korzina, .sighn {
     display: flex;
     align-items: center;
     margin-left: 10px;
+}
+
+.sighn {
+    padding: 10px;
 }
 
 .sighn button {
@@ -153,7 +164,7 @@ button i {
 
 .card-container, .card-container-2 {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     flex-wrap: nowrap;
     overflow-x: auto;
     transition: transform 0.3s ease;
@@ -183,6 +194,16 @@ button i {
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .prosmoter {
@@ -249,7 +270,7 @@ button i {
     background-color: #fff;
     transition: 0.5s;
     margin-right: 76px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .product-card-electronics:hover {
@@ -258,6 +279,24 @@ button i {
 
 .product-image-electronics img {
     width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-image-multimedia img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-image-monitor img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-image-note img {
+    width: 300px;
     height: auto;
     border-radius: 8px;
 }
@@ -314,6 +353,42 @@ button i {
     cursor: pointer;
     z-index: 10;
     transition: background-color 0.3s, transform 0.3s, border-radius 0.3s;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    justify-content: flex-end;
+}
+
+.sort-container label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#sort-order {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #555;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sort-order:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#sort-order:hover {
+    border-color: #007BFF;
 }
 
 .scroll-btn:hover {
@@ -435,6 +510,33 @@ button i {
     padding: 15px;
 }
 
+.link-button {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 30px;
+}
+
+
+.link-button > button {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    border: 1px solid #ddd;
+}
+
+.link-button > button > a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.link-button>button:hover {
+    transform: scale(1.1);
+}
+
 .footer {
     margin-top: 40px;
     display: flex;
@@ -541,6 +643,10 @@ button i {
         text-align: center;
     }
 
+    .product-card-electronics {
+        margin: 45px;
+    }
+
     .product-image img, .product-image-electronics img {
         width: 80%;
         height: auto;
@@ -581,6 +687,9 @@ button i {
             margin-bottom: 10px;
         }
     
+    .scroll-btn{
+        display: none;
+    }
 
     .card-container, .card-container-2 {
         flex-wrap: wrap;
@@ -599,6 +708,10 @@ button i {
         flex-direction: column;
         text-align: center;
         padding: 10px;
+    }
+
+    .product-card-electronics {
+        margin: 45px;
     }
 
     .product-image img, .product-image-electronics img {
@@ -620,5 +733,14 @@ button i {
     .footer .social-icons a {
         font-size: 16px;
         margin: 5px;
+    }
+
+    #sort-order {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .sort-container label {
+        font-size: 14px;
     }
 }
